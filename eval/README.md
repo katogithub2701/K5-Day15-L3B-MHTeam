@@ -25,7 +25,7 @@
 
 - **Người thứ hai chấm thử:** *(chờ Toàn chấm độc lập 5 output lúc 19:00)* → khớp __/5 *(cần ≥4/5; lệch thì viết lại định nghĩa)*
 - LLM chấm (nếu có): không dùng (chấm tay bởi người).
-- **Chuẩn "đạt"** (chép nguyên từ `spec.md` §7, chốt trước 19:30 Thứ Sáu 27/11): *(đề xuất mang tới buổi chốt 19:00: "Đạt khi ≥ 80% câu qua, và 100% câu `tu_choi` không bịa kiến thức ngoài slide")*
+- **Chuẩn "đạt"** (chép nguyên từ `spec.md` §7, chốt trước 19:30 Thứ Sáu 27/11): "Đạt khi ≥ 80% câu qua, và 100% câu `tu_choi` không bịa kiến thức ngoài slide"
 
 ## 4. Lệnh
 
