@@ -13,7 +13,7 @@ Khung dưới đây là một workflow 2 bước VÍ DỤ, chỉ để luồng c
 Nếu viết vòng lặp agent (AI tự chọn bước tiếp): đặt giới hạn MAX_STEPS và ghi lý do dừng bằng note("dừng: …").
 """
 from ai import call_model
-from tools import search_example
+from tools import search_slides
 from tracing import note  # noqa: F401
 
 SYSTEM = ""     # NHÓM VIẾT: hướng dẫn hệ thống cho model (vai trò, phạm vi, khi nào nói "không có")
@@ -22,8 +22,9 @@ MAX_STEPS = 5   # dùng khi viết vòng lặp agent
 
 def answer(text: str) -> dict:
     # Bước 1 (ví dụ): lấy căn cứ từ dữ liệu / công cụ của bài toán
-    found = search_example(text)
-    context = "\n".join("[%s] %s" % (p["code"], p["text"]) for p in found)
+    found = search_slides(text)
+    context = "\n".join("[trang %s] %s: %s" % (p["page"], p["topic"], p["content"]) for p in found) \
+        or "(không có đoạn slide nào khớp)"
     # Bước 2 (ví dụ): model quyết định dựa trên căn cứ
     reply = call_model(SYSTEM, "Căn cứ:\n%s\n\nĐầu vào của người dùng:\n%s" % (context, text))
     return {"output": reply["text"]}
