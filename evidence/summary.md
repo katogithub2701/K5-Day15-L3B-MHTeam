@@ -67,4 +67,4 @@ Giả thuyết ở `evidence/hypothesis.md`: **phải đổi một phần** (b�
 
 | Vai | Giờ hẹn | Đã xong? |
 |---|---|---|
-| Khảo sát Google Form — học viên L3A / L3B | mở 27/11 __:__ · chốt 28/11 __:__ | đang thu |
+| Khảo sát Google Form — học viên L3A / L3B, gửi Discord [L34] AI-20K | mở 27/11 14:30 · chốt 28/11 08:00 | đang thu |

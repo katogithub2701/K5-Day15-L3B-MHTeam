@@ -1,7 +1,7 @@
 # Khảo sát — xem trước slide bài giảng trên LMS
 
-- **Kênh gửi:** ____ (nhóm Zalo / Discord lớp L3B, L3A)
-- **Mở:** 27/11/2026 __:__ · **Chốt:** 28/11/2026 __:__
+- **Kênh gửi:** nhóm Discord **[L34] AI-20K** (học viên L3A, L3B)
+- **Mở:** 27/11/2026 14:30 · **Chốt:** 28/11/2026 08:00
 - **Người trả lời hợp lệ:** học viên AI20K K5, **ngoài nhóm**. Câu 1 dùng để lọc.
 - Form **không thu** tên, email, số điện thoại, mã học viên. Kết quả xuất ra `results.csv` sau khi đã xoá mọi cột nhận ra người trả lời.
 
