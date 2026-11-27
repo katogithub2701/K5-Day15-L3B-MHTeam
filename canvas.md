@@ -1,4 +1,4 @@
-# Canvas — [tên nhóm] · Track [A–F]
+# Canvas — MHTeam · Track A
 
 > Điền ở guide bước 1.4. CP1 17:00 Thứ Sáu 27/11: nộp bản đầu, đủ 7 dòng (dòng 4 được ghi giả thuyết + nguồn sẽ kiểm).
 > CP2 19:30 Thứ Sáu 27/11: cập nhật (số bằng chứng đầu, lát cắt đã chốt) và điền dòng "Đã đổi gì so với CP1".
@@ -6,11 +6,11 @@
 
 | # | Dòng | Nhóm điền |
 |---|---|---|
-| 1 | Track + lát cắt dự kiến | |
-| 2 | Người dùng chính (một vai cụ thể — không phải "học viên nói chung") | |
-| 3 | Pain một câu: ai — đang làm gì — vướng đâu — hậu quả | |
-| 4 | Bằng chứng đầu — CP1: giả thuyết + nguồn sẽ kiểm · CP2: số đầu tiên + 1 trích dẫn | |
-| 5 | **Lát cắt MỘT CÂU** (1 người dùng · 1 việc · 1 quyết định AI · 1 kết quả) | |
-| 6 | AI tự làm đến đâu + 1 dòng lý do: sai thì ai chịu gì | |
-| 7 | Phân công có tên | |
+| 1 | Track + lát cắt dự kiến | Track A (EdTech) · hướng A1 (tutor có căn cứ), áp vào **slide bài giảng trên LMS AI Thực chiến** (aithucchien.vinuni.edu.vn): hỏi đáp trên slide buổi học, trả lời kèm số trang |
+| 2 | Người dùng chính (một vai cụ thể — không phải "học viên nói chung") | Học viên L3B khoá AI20K K5, tối trước buổi học mở slide của buổi hôm sau trên LMS để xem trước |
+| 3 | Pain một câu: ai — đang làm gì — vướng đâu — hậu quả | Học viên L3B xem trước slide trên LMS → slide dài, chi tiết, khác cách giảng viên giảng trên lớp, gặp chỗ không hiểu thì không có ai để hỏi ngay → phải tự đọc lan man, tra Google (dễ ra kiến thức lệch bài) hoặc bỏ qua → lên lớp vẫn chưa nắm ý chính của buổi |
+| 4 | Bằng chứng đầu — CP1: giả thuyết + nguồn sẽ kiểm · CP2: số đầu tiên + 1 trích dẫn | Giả thuyết: `evidence/hypothesis.md`. Nguồn chính: **khảo sát ≥20 học viên** ngoài nhóm qua Google Form (`evidence/survey/questions.md`). Nguồn kiểm lại: **đào data** `data/preclass/` của BTC (bao nhiêu học viên hỏi khi tự học trước buổi, câu hỏi ngắn / mơ hồ chiếm bao nhiêu) |
+| 5 | **Lát cắt MỘT CÂU** (1 người dùng · 1 việc · 1 quyết định AI · 1 kết quả) | Một học viên L3B đang xem slide LMS trước buổi học · hỏi một câu về nội dung slide · AI quyết định trả lời kèm số trang slide, hỏi lại khi câu mơ hồ, hay nói "slide không đề cập" · học viên mở đúng trang để tự kiểm |
+| 6 | AI tự làm đến đâu + 1 dòng lý do: sai thì ai chịu gì | AI tự trả lời **khi có căn cứ trong slide**, không có thì nói không có và chỉ sang giảng viên / TA. Lý do: sai thì học viên học sai kiến thức trước buổi; vì luôn kèm số trang nên học viên tự kiểm được, và AI không bao giờ trả lời từ trí nhớ ngoài slide |
+| 7 | Phân công có tên | **Cặp X (code):** Lã Quốc Nghị (đội trưởng, nối model + API key, luồng chính + sơ đồ) · Nguyễn Quang Thành (công cụ tra slide, chi phí). **Cặp Y (bằng chứng + đánh giá):** Nguyễn Quốc Toàn (khảo sát, đào data, bằng chứng) · Hoàng Đức An (dữ liệu slide, bộ câu thử, metric). Đổi cặp / đổi việc sau mỗi chặng theo guide |
 | — | *(CP2)* Đã đổi gì so với CP1 | |
