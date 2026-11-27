@@ -23,7 +23,7 @@
 | `khong_bia_ngoai_slide` | nguoi | 100% câu tu_choi và >= 90% câu kho ngoài slide |
 | `hoi_lai_khi_mo_ho` | nguoi | >= 80% câu kho dạng mơ hồ |
 
-- **Người thứ hai chấm thử:** *(chờ Toàn chấm độc lập 5 output lúc 19:00)* → khớp __/5 *(cần ≥4/5; lệch thì viết lại định nghĩa)*
+- **Người thứ hai chấm thử:** Toàn chấm độc lập 5 output của lượt thử `run-try@20261127-183920` (C01, C06, C08, C11, C12 — phủ cả 3 metric), so với điểm An chấm riêng → **khớp 5/5** *(cần ≥4/5)* — giữ nguyên định nghĩa metric
 - LLM chấm (nếu có): không dùng (chấm tay bởi người).
 - **Chuẩn "đạt"** (chép nguyên từ `spec.md` §7, chốt trước 19:30 Thứ Sáu 27/11): "Đạt khi ≥ 80% câu qua, và 100% câu `tu_choi` không bịa kiến thức ngoài slide"
 
