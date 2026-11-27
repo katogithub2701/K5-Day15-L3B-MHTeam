@@ -75,7 +75,7 @@ flowchart TD
   | Công cụ | Input | Output | Tác động ra ngoài? |
   |---|---|---|---|
   | `search_slides` (`codebase/tools.py`) — đọc `data/slides.csv` (28 đoạn viết lại từ slide Ngày 2) | `query` (str): câu hỏi nguyên văn của học viên | List tối đa 3 đoạn `{id, page, topic, content}` khớp nhất, xếp theo điểm giảm dần. Khớp = bỏ dấu + bỏ từ chức năng, đếm từ / cụm 2 từ trùng; giữ đoạn có điểm ≥ 2 **và** chứa ≥ 50% từ có nghĩa của câu hỏi, rồi chỉ giữ đoạn ≥ 50% điểm đoạn tốt nhất. Không đoạn nào đạt → `[]` → luồng nói "slide không đề cập" | **Không** — chỉ đọc file |
-  | Kiểm trích dẫn *(bước code trong `agent.py`, không phải công cụ của AI — **chưa viết**, Nghị làm trước CP3)* | câu trả lời của model + các trang `search_slides` đã trả | đạt (mọi số trang được nêu đều thuộc các trang đã tìm) / không đạt → thay bằng "slide không đề cập" | Không |
+  | Kiểm trích dẫn *(bước code trong `agent.py`, hàm `_pages_cited` — không phải công cụ của AI)* | câu trả lời của model + các trang `search_slides` đã trả | đạt (mọi số trang được nêu đều thuộc các trang đã tìm) / không đạt → thay bằng "slide không đề cập" | Không |
 
 - **Mức tự động:** [ ] AI gợi ý, người quyết · [x] AI tự làm khi chắc, chuyển người khi không · [ ] AI tự làm — Đa số câu hỏi về slide là lành; sai thì học viên hiểu sai bài trước buổi học (sửa được trên lớp, nhưng mất thời gian và niềm tin). Vì mọi câu trả lời kèm số trang nên học viên tự kiểm rẻ; không có căn cứ thì chuyển sang giảng viên / TA.
 - **Chỗ chặn rủi ro** (rủi ro lớn nhất: **bịa nội dung hoặc bịa số trang**, trả lời từ kiến thức chung lệch bài):
@@ -92,7 +92,7 @@ flowchart TD
   | G1 / G2 — nói rõ làm được gì, tốt đến đâu | Câu trả lời ở nhánh N / N2 nói rõ "mình chỉ trả lời dựa trên slide Day 2" · kiểm bằng câu thử `tu_choi` |
   | G8 / G9 — dễ bỏ qua, dễ sửa | Nhánh O: học viên mở trang X để tự đối chiếu, thấy lệch thì bỏ qua câu trả lời và đọc slide gốc |
 
-- Phần nào còn giả (công cụ trả dữ liệu giả, model chế độ giả…) — ghi rõ, không giả làm thật: model đang ở **chế độ giả** (câu trả lời cố định) cho đến khi nối Gemini tối Thứ Sáu 27/11 · `search_slides` so từ khoá đơn giản, chưa tìm theo nghĩa · slide là **bản viết lại** 28/88 trang Day 2, không phải slide gốc. · **Code chưa khớp hết sơ đồ (làm trước CP3):** nhánh N chưa có — khi không có đoạn khớp, `agent.py` vẫn gọi model kèm dòng "(không có đoạn slide nào khớp)"; bước kiểm trích dẫn (D) chưa viết; `SYSTEM` prompt còn trống.
+- Phần nào còn giả (công cụ trả dữ liệu giả, model chế độ giả…) — ghi rõ, không giả làm thật: **model là thật** (`gemini-3.1-flash-lite`, gói miễn phí Google AI Studio, nối từ 27/11 18:10) và code đã có đủ các nhánh N · C · Q · N2 · D · O của sơ đồ. Còn giả / còn giới hạn: `search_slides` so từ khoá, chưa tìm theo nghĩa (câu hỏi bằng từ đời thường có thể không khớp) · slide là **bản viết lại** 28/88 trang Day 2, không phải slide gốc · bản chạy thử là dòng lệnh, không gắn vào LMS thật.
 
 ## §5. Chỗ khó — 4 lớp + ≥6 kịch bản + 2 tấn công *(guide 2.3)*
 
