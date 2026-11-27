@@ -55,7 +55,7 @@ Data BTC cấp đã dùng (nếu có — không commit nguyên file): __
 
   | Công cụ | Input | Output | Tác động ra ngoài? |
   |---|---|---|---|
-  |  |  |  |  |
+  | `search_slides` (`codebase/tools.py`) — đọc `data/slides.csv` (28 đoạn viết lại từ slide Ngày 2) | `query` (str): câu hỏi nguyên văn của học viên | List tối đa 3 đoạn `{id, page, topic, content}` khớp nhất, xếp theo điểm giảm dần. Khớp = bỏ dấu + bỏ từ chức năng, đếm từ / cụm 2 từ trùng; giữ đoạn có điểm ≥ 2 **và** chứa ≥ 50% từ có nghĩa của câu hỏi, rồi chỉ giữ đoạn ≥ 50% điểm đoạn tốt nhất. Không đoạn nào đạt → `[]` → luồng nói "slide không đề cập" | **Không** — chỉ đọc file |
 
 - **Mức tự động:** [ ] AI gợi ý, người quyết · [ ] AI tự làm khi chắc, chuyển người khi không · [ ] AI tự làm — lý do (sai thì ai chịu gì, sửa đắt hay rẻ):
 - **Chỗ chặn rủi ro** (rủi ro lớn nhất của lát cắt bị chặn ở đâu, bằng gì):

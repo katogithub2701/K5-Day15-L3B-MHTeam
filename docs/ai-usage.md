@@ -6,7 +6,7 @@ README của nhóm có mục "Dùng AI vào việc gì" (2–3 dòng, bắt bu�
 
 | Việc | Công cụ AI | AI làm gì | Người kiểm/sửa gì | Ai phụ trách |
 |---|---|---|---|---|
-| Code bản chạy thử | | | | |
+| Code bản chạy thử — công cụ `search_slides` | Claude Code (Claude Opus 5.5) | Viết `search_slides` trong `codebase/tools.py` (bỏ dấu, danh sách từ chức năng, chấm điểm từ / cụm 2 từ trùng, ngưỡng điểm ≥ 2 + phủ ≥ 50%, lọc tương đối 50%); đổi `codebase/agent.py` sang gọi `search_slides`; điền bảng công cụ `spec.md` §4 | Chạy thử 15 câu: 10 câu trong slide ra đúng trang (vd baseline → tr.17, 5 Whys → tr.24, PRD v0 → tr.54), 5 câu ngoài slide / tấn công / mơ hồ → `[]` · `python run.py` với AI giả chạy hết luồng · Thành đọc lại code và giải thích được từng ngưỡng: __ | Nguyễn Quang Thành |
 | Prompt / thiết kế lời gọi mô hình | | | | |
 | Đào data (viết script đếm, gợi ý nhãn) | Claude Code (Claude Opus 5.5) | Đọc từ điển cột `data/preclass/`, đề xuất 9 phép đếm, viết `evidence/count.py`, soạn nháp `evidence/data-mining.md`, `evidence/summary.md` (phần data), `spec.md` §2, `canvas.md` dòng 4 | Toàn đọc lại định nghĩa từng phép đếm (mẫu số, ngưỡng 20 ký tự / 3 phút / 5 phút) · chạy lại `count.py` ra cùng số · kiểm tay bằng Excel trên `chat.csv` (lọc `kind = question`, `agent_id = teaching_assistant`): __ câu, __ người — khớp M1 (1.091 câu, 143 người) __ · đối chiếu 7 ví dụ với dòng gốc: khớp __/7 | Nguyễn Quốc Toàn |
 | Rà câu hỏi phỏng vấn / khảo sát | | Chỉ rà câu dẫn dắt | | |
