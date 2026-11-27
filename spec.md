@@ -15,19 +15,33 @@ Data BTC cấp đã dùng (nếu có — không commit nguyên file): __
 - Việc họ cố làm xong (`động từ + đối tượng + bối cảnh`, không có chữ AI):
 - Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ:
 - Pain (KHÔNG chữ AI): ai — đang làm gì — vướng đâu — hậu quả gì:
-- Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`): __
+- Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`): đào data pre-class 05/11–25/11/2026 — **143/436 (32,8%)** học viên hỏi trợ giảng AI khi tự học trước buổi; **66/429 (15,4%)** bôi đen chữ trên slide để hỏi (433 lần, 92,8% thành câu hỏi thật); **46,9%** câu là hỏi nối; chỉ **29,9%** câu trả lời có dẫn mốc trong bài để tự kiểm. Khảo sát (nguồn chính): n = __ · gặp chỗ không hiểu __/__ (__%). Kết luận tạm: giả thuyết **phải đổi một phần** — nhu cầu hỏi có thật, nhưng chỉ 36,5% câu hỏi rơi vào 19h–6h, không chủ yếu "tối trước buổi".
 
 ## §2. Impact & quyết định chọn *(guide 1.3)*
 
+> Quy mô: L3 hơn 700 học viên, chia L3A và L3B (`tracks/track-a-edtech.md`); data pre-class có 721 tài khoản level 3–4 → **L3B ≈ 360 người** *(tự ước tính: chia đôi 721)*. Mã M1–M9 là phép đếm ở `evidence/data-mining.md`.
+
 | Hướng | Bao nhiêu người gặp | Bao nhiêu lần / tháng | Mỗi lần tốn gì | Impact / tháng | Làm kịp không | Chọn? |
 |---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
+| **H1 · Hỏi đáp trên slide LMS, trả lời kèm số trang** (A1) | 360 × 32,8% ≈ **118** người (M1) | **2,56** lần / người (M8) | **15 phút** tự đọc lan man / tra Google *(tự ước tính — thay bằng câu 6 khảo sát)* + nguy cơ hiểu lệch bài | 118 × 2,56 × 15 ≈ **4.530 phút ≈ 75 giờ** | Có — 1 công cụ tra slide + 1 lần gọi model, data slide nhóm tự có | **✓ Chọn** |
+| H2 · Tóm tắt ý chính + lộ trình học trước buổi cho người bỏ dở | 360 × 55,2% ≈ **199** người mở bài nhưng chưa xong mục nào (M9) | 4 lần *(tự ước tính)* | 10 phút *(tự ước tính)* | 199 × 4 × 10 ≈ 7.960 phút ≈ 133 giờ | Khó đo trong hackathon (cần theo dõi người học nhiều ngày) | ✗ Loại |
+| H3 · Trợ lý Discord trả lời lịch, phòng, logistics (A2) | 360 *(tự ước tính: mọi học viên L3B)* | 4 lần *(tự ước tính)* | 5 phút *(tự ước tính)* | 360 × 4 × 5 = 7.200 phút = 120 giờ | Có | ✗ Loại |
+| H4 · Hỏi đáp dưới video pre-class | 143 người đã hỏi (M1) | 2,56 (M8) | đã có trợ giảng AI giải | ≈ 0 phần thêm | Có | ✗ Loại |
 
-- **Impact / tháng** của hướng chọn = __ người × __ lần × __ phút = __ — nguồn từng thừa số: __ (không có nguồn thì ghi rõ *(tự ước tính)*)
-- Hướng ĐÃ LOẠI + vì sao (giữ lại, đừng xoá):
-- Số lần / tháng của từng kiểu người dùng (dùng cho persona ở §8):
+- **Impact / tháng** của hướng chọn = **118 người × 2,56 lần × 15 phút ≈ 4.530 phút ≈ 75 giờ học viên / tháng** — nguồn: 118 = 360 *(tự ước tính, chia đôi 721 tài khoản L3)* × 32,8% (M1, `evidence/data-mining.md`) · 2,56 = 1,79 ngày có hỏi / 21 ngày × 30 (M8) · 15 phút *(tự ước tính, chờ khảo sát câu 6 — trung điểm của "5–15" và "15–30 phút")*. 118 là **cận dưới**: chỉ đếm người đã chủ động hỏi trên pre-class, chưa đếm người gặp chỗ không hiểu mà không hỏi ai.
+- **Hướng ĐÃ LOẠI + vì sao** (giữ lại, đừng xoá):
+  - **H2** — impact tính ra cao hơn H1 nhưng **chỉ 1/3 thừa số có nguồn**; data chỉ cho biết người ta bỏ dở, không cho biết **vì sao** (giả thuyết thay thế ở `hypothesis.md`: thiếu thời gian — tóm tắt không chữa được), và không đo được kết quả trong 2 ngày. Guide 1.3: hai hướng sát nhau → chọn hướng bằng chứng mạnh hơn.
+  - **H3** — **không thừa số nào có nguồn**: data `training-ops/` là giả lập, BTC ghi rõ không phải bằng chứng pain; nhóm không có khảo sát / phỏng vấn về lịch.
+  - **H4** — pre-class đã có trợ giảng AI dưới video; làm lại thì không tạo thêm giá trị. Khác biệt nhóm học được từ data cho H1: **luôn kèm chỗ trong bài** (chỉ 29,9% câu trả lời pre-class có dẫn mốc, M6) và **nói "không có" khi thiếu ngữ cảnh** (9,1% lần AI thiếu ngữ cảnh vẫn trả lời, M5).
+- **Số lần / tháng của từng kiểu người dùng** (dùng cho persona ở §8; từ phân bố M8 trên 143 người đã hỏi, quy 21 ngày → 30 ngày):
+
+  | Kiểu | Tỉ lệ | Ngày có hỏi / 21 ngày | Lần / tháng |
+  |---|---|---|---|
+  | Thỉnh thoảng hỏi | 85/143 (59,4%) | 1 | ≈ 1,4 |
+  | Hỏi đều | 47/143 (32,9%) | 2–3 (tb 2,32) | ≈ 3,3 |
+  | Hỏi dồn / rất hay hỏi | 11/143 (7,7%) | 4–11 (tb 5,64) | ≈ 8,1 |
+
+  Mỗi lần hỏi trung bình **1.091 / 256 ≈ 4,3 câu** (256 = tổng số ngày-người có hỏi) — vì gần nửa câu là hỏi nối (M4).
 
 ## §3. Giải pháp tương tự *(guide 2.1)*
 - [sản phẩm / tính năng gần giống]: một điều đáng học · một điều đáng né · mình khác gì
