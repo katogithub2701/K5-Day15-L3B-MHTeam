@@ -36,10 +36,12 @@
 | Lượt | Run ID | Model | Cấu hình (prompt / công cụ / thay đổi) | Đạt / tổng | % | Đạt chuẩn? |
 |---|---|---|---|---|---|---|
 | 1 | `run-1@20261128-080617` | `gemini-3.1-flash-lite` | Bản CP2: `SYSTEM` prompt 3 nhãn (TRẢ LỜI / HỎI LẠI / KHÔNG ĐỀ CẬP) · `search_slides` so từ khoá · kiểm số trang bằng code · 24 câu · `--wait 4` | 18/24 | 75% | **Chưa** (< 80%; `tu_choi` 3/3 đạt) |
-| 2 | | | | __/__ | | |
+| 2 | `run-2@20261128-101825` | `gemini-3.1-flash-lite` | Cải tiến mục `HỎI LẠI` trong `SYSTEM` (`codebase/agent.py`, commit `a70f3e0`): bắt buộc hỏi lại khi có từ chỉ trỏ mơ hồ kể cả khi chỉ tìm ra 1 đoạn · giữ nguyên `search_slides`, kiểm số trang, 24 câu · `--wait 4` | 21/24 | 88% | **Đạt** (≥ 80%; `tu_choi` 3/3 đạt) |
 
 Lượt chạy lại vì lỗi kỹ thuật, lượt sau CP4: ghi thêm dòng, không sửa dòng cũ.
 
 ## 6. Lỗi chính
 
-Tóm 2–3 dòng từ `eval/report.md`: nhóm lỗi lớn nhất · đã sửa gì · còn lại gì.
+- **Nhóm lỗi lớn nhất (lượt 1):** *không hỏi lại khi câu mơ hồ* (`C08`, `C09` — tự đoán và ghép trang không liên quan, khớp rủi ro trả lời lệch bài ở `spec.md` §4) và *tìm kiếm từ khoá bỏ sót đoạn* (`C10`, `C14`).
+- **Đã sửa ở lượt 2:** siết mục `HỎI LẠI` trong `SYSTEM` (`codebase/agent.py`, commit `a70f3e0`) cho nhóm câu mơ hồ → nhóm lỗi đó cải thiện `0/2 → 2/2` (`C08`, `C09` đều chuyển sang hỏi lại 1 câu ngắn thay vì tự trả lời luôn); tổng tăng `18/24 (75%) → 21/24 (88%)` (đạt chuẩn ≥ 80%, `0` câu tệ đi; `C20` đạt thêm do biến thiên sinh câu của model).
+- **Còn lại (3/24 câu trượt):** `search_slides` bỏ sót đoạn ở câu dài (`C10`, `C14`) và từ chối cả câu khi chỉ thiếu chi tiết hình vẽ (`C13`). Chi tiết ở `eval/report.md`.
