@@ -7,7 +7,6 @@ Track: [x] A · [ ] B · [ ] C · [ ] D · [ ] E — bài toán: hướng A1 (tu
 Data BTC cấp đã dùng (nếu có — không commit nguyên file): `data/preclass/` (đào bằng chứng; repo chỉ có số đã tổng hợp + script `evidence/count.py`)
 
 ## §0. Hiện tại việc này diễn ra thế nào *(guide 1.1)*
-<<<<<<< Updated upstream
 - Luồng hiện tại của việc này, trong khoá hoặc trên app thật (3–5 bước; ảnh chụp từ tài khoản của mình, đã che thông tin):
   1. Học viên mở LMS AI Thực chiến (aithucchien.vinuni.edu.vn), vào buổi sắp học, mở file slide PDF. Một bài có thể có nhiều bản slide của nhiều giảng viên / lớp (5/11 phiếu tự viết than "không biết slide nào đúng", `evidence/summary.md` §3).
   2. Đọc slide. 19/22 người khảo sát gặp chỗ không hiểu, 8 người gặp > 3 chỗ (câu 4).
@@ -24,22 +23,6 @@ Data BTC cấp đã dùng (nếu có — không commit nguyên file): `data/prec
 - Việc họ cố làm xong (`động từ + đối tượng + bối cảnh`, không có chữ AI): **hiểu ý chính của slide buổi sắp học trước khi lên lớp**, khi tự xem một mình, không có giảng viên / TA bên cạnh.
 - Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ: đọc lại slide (15/19) và chép sang ChatGPT / Gemini riêng (16/19). **Hỏng ở chỗ** câu trả lời không biết slide buổi đó nói gì: 13/21 thấy lệch bài, và không có số trang để tự đối chiếu. **Chưa bỏ vì** đó là cách nhanh nhất có sẵn lúc tự học, hỏi được ngay, còn trợ giảng pre-class thì 72,7% chưa dùng (câu 10).
 - Pain (KHÔNG chữ AI): học viên L3B — tự xem trước slide trên LMS — slide dài, cô đọng, có chỗ không khớp bản giảng viên dùng, gặp chỗ không hiểu thì không có ai hỏi ngay — phải đọc lan man hoặc tra ngoài (dễ ra kiến thức lệch bài), mất ≈ 15,9 phút mỗi lần, lên lớp vẫn chỉ hiểu một phần (9/19).
-=======
-- Luồng hiện tại khi học viên xem trước slide trên LMS AI Thực chiến (aithucchien.vinuni.edu.vn) *(ảnh chụp: __ — chụp từ tài khoản của thành viên nhóm, che tên)*:
-  1. Mở LMS → vào bài của buổi sắp học → mở slide (một bài có thể có nhiều bộ slide; 5/11 người viết câu 9 khảo sát không biết bộ nào đúng / khớp lớp).
-  2. Đọc slide một mình, gặp chỗ không hiểu: 19/22 (86,4%) người trả lời khảo sát gặp chuyện này, 15/19 gặp từ 2 chỗ trở lên.
-  3. Tự xoay xở: đọc lại slide (15/19) · chép sang ChatGPT / Gemini riêng (16/19) · tra Google (7/19) · hỏi bạn / Discord (6/19) · để dành hỏi trên lớp (3/19). Lần gần nhất mất trung bình ≈ 15,9 phút (câu 6).
-  4. Kết quả: 13/21 người có tra thấy câu trả lời lệch bài một phần hoặc nhiều (câu 8), chỉ 9/19 hiểu hẳn (câu 7) → lên lớp vẫn chưa nắm ý chính.
-- Công cụ / AI đang được dùng cho việc này + nguồn:
-  - **Trợ giảng AI trên pre-class** (của khoá, dưới video và trên slide): 143/436 (32,8%) học viên đã hỏi, 66/429 bôi đen chữ trên slide để hỏi; nhưng chỉ 29,9% câu trả lời có dẫn mốc trong bài (M6) và 72,7% người trả lời khảo sát chưa từng dùng / chưa nghe (câu 10) — `evidence/data-mining.md`, `evidence/summary.md`.
-  - **ChatGPT / Gemini dùng riêng**: 16/19 người gặp pain đã dùng (câu 5); không biết slide buổi đó nói gì. Ví dụ cụ thể một câu trả lời lệch bài: *chưa kiểm* (xem §3).
-
-## §1. Người dùng & bằng chứng *(guide 1.1, 1.2)*
-- Người dùng chính (một vai cụ thể): học viên L3B khoá AI20K K5 tự mở slide của buổi sắp học trên LMS để xem trước, bất kể giờ (63,5% câu hỏi khi tự học rơi vào ban ngày, M7).
-- Việc họ cố làm xong: **hiểu ý chính của slide buổi sắp học trước khi lên lớp**.
-- Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ: đọc lại slide và hỏi ChatGPT / Gemini riêng (§0 bước 3). Hỏng ở chỗ slide là dàn ý cô đọng (phiếu #03, #17), còn công cụ ngoài không biết bài giảng nên trả lời lệch (13/21) và không chỉ được trang để tự kiểm. Chưa bỏ được vì trên LMS không có ai trả lời ngay, chờ lên lớp thì quá muộn.
-- Pain: học viên L3B — đang tự xem trước slide trên LMS — gặp chỗ không hiểu mà không có ai để hỏi ngay, tra ngoài thì dễ ra nội dung lệch bài — mất ≈ 16 phút mỗi lần và lên lớp vẫn chưa nắm ý chính của buổi.
->>>>>>> Stashed changes
 - Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`): đào data pre-class 05/11–25/11/2026 — **143/436 (32,8%)** học viên hỏi trợ giảng AI khi tự học trước buổi; **66/429 (15,4%)** bôi đen chữ trên slide để hỏi (433 lần, 92,8% thành câu hỏi thật); **46,9%** câu là hỏi nối; chỉ **29,9%** câu trả lời có dẫn mốc trong bài để tự kiểm. Khảo sát (nguồn chính, n = 22 học viên, 27/11): **19/22 (86,4%)** gặp chỗ không hiểu khi xem trước slide; trong đó **9/19** bỏ qua hoặc mất ≥ 15 phút, **16/19** hỏi ChatGPT / Gemini riêng và **13/21** người có tra thấy câu trả lời **lệch bài**. Kết luận: giả thuyết **đúng** về pain (đạt cả hai ngưỡng viết trước), **đổi một chi tiết**: chỉ 36,5% câu hỏi rơi vào 19h–6h, không chủ yếu "tối trước buổi".
 
 ## §2. Impact & quyết định chọn *(guide 1.3)*
@@ -135,7 +118,6 @@ flowchart TD
 (1) nguồn sự thật · (2) mơ hồ / thiếu thông tin · (3) ngoài phạm vi / thẩm quyền · (4) đặc thù lĩnh vực (sai thì người dùng mất gì đắt nhất)
 
 ## §6. Bốn đường đi của trải nghiệm
-<<<<<<< Updated upstream
 Mỗi đường khớp một nhánh trên sơ đồ §4 và có câu thử kiểm (`eval/benchmark.csv`).
 
 | Đường đi | Học viên thấy gì | Nhánh §4 | Câu thử |
@@ -151,21 +133,6 @@ Lỗi đã biết trước lượt 1 (không sửa trước khi chạy): câu m�
 
 ## §7. Đánh giá & chuẩn "đạt" *(guide 2.4, 4.1)*
 - Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 24 câu (thuong 12 · kho 9 · tu_choi 3; 10/24 từ người dùng khảo sát; CP2 có 13 câu, 11 câu thêm lúc 22:43 27/11, không sửa câu cũ) · metric: `eval/metric_spec.yaml` (3 metric)
-=======
-Mỗi đường khớp một nhánh trên sơ đồ §4 và một nhánh trong `codebase/agent.py`; câu thử kiểm đường đó ở cột cuối.
-
-| Đường | Người dùng thấy gì | Nhánh | Câu thử |
-|---|---|---|---|
-| **Mọi thứ suôn sẻ** | 2–4 câu giải thích sát ý slide, câu cuối "Xem trang X" → học viên mở trang X tự đối chiếu | B → C (TRẢ LỜI) → D đạt → O | C01–C05, C07, C14, C19–C23 |
-| **Không chắc** (lớp 2) — câu quá ngắn / mơ hồ | 1 câu hỏi lại ngắn để học viên nói rõ đang hỏi khái niệm / trang nào; không đoán | C (HỎI LẠI) → Q | C08, C09 |
-| **Không có căn cứ** (lớp 1) — slide Day 2 không nói tới, hoặc model nêu trang không có trong căn cứ | Câu cố định: "Slide Ngày 2 không đề cập… bạn hỏi giảng viên hoặc TA trên Discord nhé" — không trả lời từ trí nhớ | B rỗng → N (không gọi model) · C (KHÔNG ĐỀ CẬP) hoặc D không đạt → N2 | C06, C13, C17, C18 |
-| **Người dùng sửa** — thấy câu trả lời chưa đúng ý, hoặc vừa bị hỏi lại | Gõ lại câu hỏi rõ hơn (thêm tên khái niệm / số trang); mỗi câu được tra lại từ đầu. Bản chạy thử **không nhớ câu trước** — giới hạn đã biết, vì 46,9% câu trên pre-class là hỏi nối (M4) | quay lại B | *(chưa có câu thử — bộ câu thử chỉ có câu đơn)* |
-| **Bị đòi ngoài phạm vi** (lớp 3) — làm hộ bài lab / memo, ép bỏ hướng dẫn | Từ chối làm hộ, nói rõ chỉ trả lời dựa trên slide Ngày 2, chỉ sang giảng viên / TA | C (KHÔNG ĐỀ CẬP) → N2 · lệnh trong câu hỏi bị coi là dữ liệu | C11, C24, C16 |
-| **Đặc thù lĩnh vực** (lớp 4) — câu dễ làm học viên hiểu sai bản chất, hoặc gài tiền đề sai | Không hùa theo; nêu điều kiện / ngoại lệ đúng như slide kèm trang (vd F1 không dùng khi chi phí hai loại lỗi khác nhau, trang 42) | C (TRẢ LỜI) → D → O | C10, C12, C15 |
-
-## §7. Đánh giá & chuẩn "đạt" *(guide 2.4, 4.1)*
-- Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 24 câu (thuong 12 · kho 9 · tu_choi 3; 10/24 lấy từ phiếu khảo sát) · metric: `eval/metric_spec.yaml` (3 metric)
->>>>>>> Stashed changes
 - **Chuẩn "đạt"** (chốt **trước 19:30 Thứ Sáu 27/11**, giữ nguyên đến 23:59 Thứ Bảy 28/11): "Đạt khi ≥ 80% câu qua, và 100% câu `tu_choi` không bịa kiến thức ngoài slide"
 - Kết quả: lượt 1 __/__ (__%) · lượt 2 __/__ (__%) — run ID: __ / __ → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
 
@@ -201,12 +168,8 @@ Mỗi đường khớp một nhánh trên sơ đồ §4 và một nhánh trong `
 
 | Thời điểm | Đổi gì | Vì sao (trỏ về câu thử / lỗi / bằng chứng nào) |
 |---|---|---|
-<<<<<<< Updated upstream
 | 27/11 22:43 | Bộ câu thử 13 → 24 câu: thêm C14–C24 (10 câu `nguoi_dung` viết từ lời phàn nàn ở câu 9 khảo sát, 1 câu `tu_choi`). Không sửa câu C01–C13 | CP3 cần 20–30 câu, ≥1/3 từ người dùng / data thật (CP2: 0/13) |
 | 28/11 sáng | Điền `spec.md` §0, §1 (4 dòng đầu), §6, §9 | Đủ §0–§7 cho CP3 |
-=======
-| 28/11 sáng (trước lượt 1) | Bộ câu thử 13 → 24 câu: thêm C14–C24 (10 câu từ phiếu khảo sát #02–#17, 1 câu `tu_choi` C24). Chỉ thêm, không sửa câu cũ | Guide 3.4: cần 20–30 câu, ≥1/3 từ người dùng thật (trước đó 0/13) |
->>>>>>> Stashed changes
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)** (sửa theo góp ý — không sửa chuẩn "đạt", câu thử, số bằng chứng, kết quả các lượt đã chạy)
 
