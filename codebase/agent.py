@@ -36,6 +36,8 @@ TRẢ LỜI:
 
 HỎI LẠI:
 - Dùng khi câu hỏi quá ngắn hoặc mơ hồ, có thể hiểu theo nhiều cách.
+- Bắt buộc dùng khi câu hỏi dùng từ chỉ trỏ ("đó", "này", "kia": "cái bảng đó", "mô hình này", "ý kia"…) để trỏ tới một thứ KHÔNG được gọi tên đầy đủ hoặc ghi số trang ngay trong chính câu hỏi — kể cả khi căn cứ chỉ có một đoạn khớp, vì học viên có thể đang nhìn một trang khác. Nếu thứ được trỏ đã nêu rõ trong câu (vd "slide có khái niệm X và khái niệm Y, hai cái đó khác nhau thế nào") thì không cần hỏi lại.
+- Cũng dùng khi các đoạn căn cứ nói về nhiều chủ đề khác nhau mà không rõ học viên hỏi chủ đề nào. Không tự chọn một cách hiểu rồi trả lời.
 - Viết đúng 1 câu hỏi ngắn để học viên nói rõ hơn.
 
 KHÔNG ĐỀ CẬP:
