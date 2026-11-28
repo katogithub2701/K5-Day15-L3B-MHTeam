@@ -33,18 +33,19 @@ personas:           # ≥3 kiểu người dùng; share cộng lại = 1
 # Mỗi lượt hỏi lấy ngẫu nhiên một đầu vào trong eval/benchmark.csv (type thuong và kho).
 
 prices:             # USD / 1 triệu token, gói trả phí (Standard). ≥2 mức model
+                    # Theo kickoff/further-reading/model-prices.md: model có lịch tăng giá thì dùng giá SAU khi tăng.
   - model: gemini-3.1-flash-lite   # model đang chạy trong bản chạy thử (rẻ)
     input: 0.25
     output: 1.50
-    source: "https://ai.google.dev/gemini-api/docs/pricing (chuyển tới aistudio.google.com/docs/pricing) · xem 28/11/2026 · gói Paid, text"
+    source: "kickoff/further-reading/model-prices.md · đối chiếu https://ai.google.dev/gemini-api/docs/pricing (chuyển tới aistudio.google.com/docs/pricing) · xem 28/11/2026 · gói Paid, text"
   - model: gemini-3.8-flash        # mức giữa
-    input: 0.75
-    output: 3.75
-    source: "https://ai.google.dev/gemini-api/docs/pricing · xem 28/11/2026 · giá đến 31/12/2026; từ 01/01/2027 là 1,50 / 7,50"
-  - model: gemini-4-carbon         # mạnh nhất ('most capable reasoning model'), không có gói miễn phí
+    input: 1.50
+    output: 7.50
+    source: "kickoff/further-reading/model-prices.md · https://ai.google.dev/gemini-api/docs/pricing · xem 28/11/2026 · giá sau khi tăng, áp dụng từ 01/01/2027 (đến 31/12/2026 là 0,75 / 3,75)"
+  - model: gemini-4-argon          # mức mạnh, không có gói miễn phí
     input: 4.00
     output: 20.00
-    source: "https://ai.google.dev/gemini-api/docs/pricing · xem 28/11/2026 · dùng giá từ 01/12/2026 (4 / 20) vì đưa vào dùng thật sau ngày đó; đến 30/11/2026 là 2 / 10"
+    source: "kickoff/further-reading/model-prices.md · https://ai.google.dev/gemini-api/docs/pricing · xem 28/11/2026 · giá sau khi tăng, áp dụng từ 01/12/2026 (đến 30/11/2026 là 2 / 10)"
 
 usd_to_vnd:         # tuỳ chọn: điền thì bản tóm tắt in thêm tiền Việt
   rate:
