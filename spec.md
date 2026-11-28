@@ -137,10 +137,10 @@ Lỗi đã biết trước lượt 1 (không sửa trước khi chạy): câu m�
 - Kết quả: lượt 1 **18/24 (75%)** — thuong 10/12 · kho 5/9 · tu_choi 3/3 → **chưa đạt chuẩn** (75% < 80%; điều kiện 100% `tu_choi` đạt) · lượt 2 **21/24 (88%)** — thuong 11/12 · kho 7/9 · tu_choi 3/3 → **đạt chuẩn** (88% ≥ 80%; điều kiện 100% `tu_choi` đạt) — run ID: `run-1@20261128-080617` / `run-2@20261128-101825` → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
 
 ## §8. Chi phí khi dùng thật *(guide 4.2)*
-- Persona + giá: `cost/personas.yaml` · lượt mô phỏng: `cost/simulate-__.csv` (__ phiên)
-- Chi phí / task thành công: __ (model __) · __ (model __)
-- Chi phí / tháng ở quy mô thật: thấp __ · cơ sở __ · cao __ → chi tiết `cost/cost-estimate.md`
-- So với impact / người / tháng (§2): đáng làm không, vì sao:
+- Persona + giá: `cost/personas.yaml` (3 persona theo M8 · giá gói Paid sau khi tăng, xem 28/11/2026) · lượt mô phỏng: `cost/simulate-1.csv` (50 phiên, seed 42, run ID `simulate-1@20261128-112922`; 3/50 phiên lỗi HTTP 503 của gói miễn phí, không tính vào trung bình) · tỉ lệ đạt lượt 2: 21/24 (88%), `run-2@20261128-101825`
+- Chi phí / task thành công: **$0.0011** (model `gemini-3.1-flash-lite`) · **$0.0059** (model `gemini-3.8-flash`) · $0.0158 (model `gemini-4-argon`). Token đo trên `gemini-3.1-flash-lite`; hai model kia dùng cùng tỉ lệ đạt *(giả định, chưa chạy bộ câu thử trên hai model này)*
+- Chi phí / tháng ở quy mô thật (`gemini-3.1-flash-lite`): thấp **$0.28** (118 người) · cơ sở **$0.55** (236 người) · cao **$2.02** (864 người) — model mạnh nhất `gemini-4-argon`: $4.14 · $8.28 · $30.31 → chi tiết `cost/cost-estimate.md`
+- So với impact / người / tháng (§2): **đáng làm.** Impact ≈ 40,7 phút tiết kiệm / người / tháng (80 giờ ÷ 118 người); chi phí cơ sở $0.0023 / người / tháng (≈ $0.0034 / giờ tiết kiệm), model mạnh nhất cũng chỉ $0.0351. Rào cản không phải tiền model mà là chất lượng (còn 3/24 câu trượt) và giờ công giảng viên / TA nhận câu "slide không đề cập" (chưa tính).
 
 ## §9. Rủi ro & an toàn
 - Dữ liệu: đã ẩn danh gì, không thu gì, không đưa gì vào model gói miễn phí:
