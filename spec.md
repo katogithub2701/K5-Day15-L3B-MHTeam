@@ -160,8 +160,8 @@ Lỗi đã biết trước lượt 1 (không sửa trước khi chạy): câu m�
   - **Rủi ro còn lại:** AI tóm tắt lệch ý nhưng vẫn nêu đúng trang (code không bắt được). Phát hiện bằng chấm tay theo `eval/metric_spec.yaml`; với người dùng thật, số trang là cách tự kiểm duy nhất.
 
 ## §10. Phân công & changelog
-- Phân công có tên (theo chặng, chia cặp — guide "Cách chia việc"): __
-- Dùng AI vào việc gì (2–3 dòng; chi tiết `docs/ai-usage.md`):
+- Phân công có tên (theo chặng, chia cặp — guide "Cách chia việc"): **Cặp X (code):** Lã Quốc Nghị (đội trưởng) — điều phối, nối model, luồng `agent.py`, cải tiến lượt 2, giao diện `web.py` · Nguyễn Quang Thành — công cụ `search_slides`, mô phỏng chi phí (`cost/`). **Cặp Y (bằng chứng + đánh giá):** Nguyễn Quốc Toàn — khảo sát, đào data, bằng chứng (`evidence/`), video demo · Hoàng Đức An — dữ liệu slide (`data/`), bộ câu thử, metric, chấm và báo cáo đánh giá (`eval/`). Chấm `pass` lượt 1 và lượt 2: An + Toàn.
+- Dùng AI vào việc gì (2–3 dòng; chi tiết `docs/ai-usage.md`): **Claude Code** viết code (`search_slides`, `agent.py`, `ai.py`, `web.py`), script đếm data / khảo sát và nháp `spec.md`, bằng chứng — người phụ trách chạy lại, đối chiếu số và tự giải thích được phần của mình. **Antigravity (Gemini)** viết lại 28 trang slide Ngày 2 thành `data/slides.csv` và nháp câu thử, metric — An đối chiếu với slide gốc. **Không dùng AI chấm `pass`**: chấm tay theo `eval/metric_spec.yaml`.
 - Nhật ký thay đổi — **mọi thay đổi sau CP2 19:30 Thứ Sáu 27/11 phải có dòng ở đây**:
 
 **CP2 → CP4** (vd thu hẹp lát cắt, hỏi thêm người dùng, lần cải tiến trước lượt 2)
