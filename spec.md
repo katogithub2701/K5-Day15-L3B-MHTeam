@@ -8,13 +8,21 @@ Data BTC cấp đã dùng (nếu có — không commit nguyên file): `data/prec
 
 ## §0. Hiện tại việc này diễn ra thế nào *(guide 1.1)*
 - Luồng hiện tại của việc này, trong khoá hoặc trên app thật (3–5 bước; ảnh chụp từ tài khoản của mình, đã che thông tin):
+  1. Học viên mở LMS AI Thực chiến (aithucchien.vinuni.edu.vn), vào buổi sắp học, mở file slide PDF. Một bài có thể có nhiều bản slide của nhiều giảng viên / lớp (5/11 phiếu tự viết than "không biết slide nào đúng", `evidence/summary.md` §3).
+  2. Đọc slide. 19/22 người khảo sát gặp chỗ không hiểu, 8 người gặp > 3 chỗ (câu 4).
+  3. Gặp chỗ khó thì đọc lại slide (15/19), chép đoạn sang ChatGPT / Gemini riêng để hỏi (16/19), tra Google (7/19), hỏi bạn (4/19) hoặc để dành hỏi trên lớp (3/19) (câu 5).
+  4. Đọc câu trả lời rồi tự đoán nó có khớp với cách giảng viên dạy không. 13/21 người có tra thấy câu trả lời lệch một phần hoặc lệch nhiều so với bài (câu 8). Mất trung bình ≈ 15,9 phút mỗi lần (câu 6).
+  5. Lên lớp: 9/19 người mới chỉ "hiểu một phần" (câu 7).
+  - Ảnh chụp màn hình: **chưa có** (chưa chụp, sẽ bổ sung khi có).
 - Công cụ / AI đang được dùng cho việc này (nếu có) + nguồn. Không kiểm được thì ghi "chưa kiểm":
+  - **ChatGPT / Gemini dùng riêng**: công cụ chính, 16/19 người gặp pain dùng (khảo sát câu 5). Không biết slide buổi đó nói gì, không chỉ được trang để tự kiểm.
+  - **Trợ giảng AI trên pre-class** (dưới video, bôi đen chữ trên slide để hỏi): có sẵn trong khoá, nhưng 16/22 (72,7%) người khảo sát chưa dùng (câu 10). Trong data, 143/436 học viên đã hỏi, chỉ 29,9% câu trả lời có dẫn mốc trong bài (`evidence/data-mining.md` M1, M6). Trên trang slide PDF của LMS có trợ giảng AI hay không: **chưa kiểm**.
 
 ## §1. Người dùng & bằng chứng *(guide 1.1, 1.2)*
-- Người dùng chính (một vai cụ thể):
-- Việc họ cố làm xong (`động từ + đối tượng + bối cảnh`, không có chữ AI):
-- Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ:
-- Pain (KHÔNG chữ AI): ai — đang làm gì — vướng đâu — hậu quả gì:
+- Người dùng chính (một vai cụ thể): học viên L3B khoá AI20K K5, tự mở slide của buổi sắp học trên LMS để xem trước, bất kể giờ (63,5% câu hỏi khi tự học rơi vào ban ngày, `evidence/data-mining.md`).
+- Việc họ cố làm xong (`động từ + đối tượng + bối cảnh`, không có chữ AI): **hiểu ý chính của slide buổi sắp học trước khi lên lớp**, khi tự xem một mình, không có giảng viên / TA bên cạnh.
+- Hôm nay họ giải bằng gì, hỏng ở đâu, vì sao chưa bỏ: đọc lại slide (15/19) và chép sang ChatGPT / Gemini riêng (16/19). **Hỏng ở chỗ** câu trả lời không biết slide buổi đó nói gì: 13/21 thấy lệch bài, và không có số trang để tự đối chiếu. **Chưa bỏ vì** đó là cách nhanh nhất có sẵn lúc tự học, hỏi được ngay, còn trợ giảng pre-class thì 72,7% chưa dùng (câu 10).
+- Pain (KHÔNG chữ AI): học viên L3B — tự xem trước slide trên LMS — slide dài, cô đọng, có chỗ không khớp bản giảng viên dùng, gặp chỗ không hiểu thì không có ai hỏi ngay — phải đọc lan man hoặc tra ngoài (dễ ra kiến thức lệch bài), mất ≈ 15,9 phút mỗi lần, lên lớp vẫn chỉ hiểu một phần (9/19).
 - Bằng chứng — số chính + kết luận (chi tiết: `evidence/summary.md`): đào data pre-class 05/11–25/11/2026 — **143/436 (32,8%)** học viên hỏi trợ giảng AI khi tự học trước buổi; **66/429 (15,4%)** bôi đen chữ trên slide để hỏi (433 lần, 92,8% thành câu hỏi thật); **46,9%** câu là hỏi nối; chỉ **29,9%** câu trả lời có dẫn mốc trong bài để tự kiểm. Khảo sát (nguồn chính, n = 22 học viên, 27/11): **19/22 (86,4%)** gặp chỗ không hiểu khi xem trước slide; trong đó **9/19** bỏ qua hoặc mất ≥ 15 phút, **16/19** hỏi ChatGPT / Gemini riêng và **13/21** người có tra thấy câu trả lời **lệch bài**. Kết luận: giả thuyết **đúng** về pain (đạt cả hai ngưỡng viết trước), **đổi một chi tiết**: chỉ 36,5% câu hỏi rơi vào 19h–6h, không chủ yếu "tối trước buổi".
 
 ## §2. Impact & quyết định chọn *(guide 1.3)*
@@ -110,11 +118,21 @@ flowchart TD
 (1) nguồn sự thật · (2) mơ hồ / thiếu thông tin · (3) ngoài phạm vi / thẩm quyền · (4) đặc thù lĩnh vực (sai thì người dùng mất gì đắt nhất)
 
 ## §6. Bốn đường đi của trải nghiệm
-- Mọi thứ suôn sẻ: · Không chắc (lớp 2): · Không có căn cứ (lớp 1): · Người dùng sửa:
-- Bị đòi ngoài phạm vi (lớp 3): · Trường hợp đặc thù lĩnh vực (lớp 4):
+Mỗi đường khớp một nhánh trên sơ đồ §4 và có câu thử kiểm (`eval/benchmark.csv`).
+
+| Đường đi | Học viên thấy gì | Nhánh §4 | Câu thử |
+|---|---|---|---|
+| **Mọi thứ suôn sẻ** | 2–4 câu giải thích sát ý slide, kết bằng "Xem trang X". Học viên mở trang X để tự kiểm | B → C → D → O | C01–C05, C07, C14, C19–C23 |
+| **Không chắc (lớp 2)**: câu quá ngắn / mơ hồ ("cái ma trận đó…") | Đúng 1 câu hỏi lại để học viên nói rõ khái niệm / trang nào, không đoán bừa | C → Q | C08, C09 |
+| **Không có căn cứ (lớp 1)**: ngoài slide Ngày 2, buổi khác, chi tiết chỉ có trong hình | Câu cố định "Slide Ngày 2 không đề cập… hỏi giảng viên hoặc TA trên Discord". Không tìm được đoạn nào thì **không gọi model**. Câu hỏi về hình thì trả lời phần chữ có căn cứ và nói rõ cần mở trang để xem hình | N / N2 (hình: O) | C06, C15–C18 · C13 |
+| **Người dùng sửa**: thấy câu trả lời lệch slide | Bản chạy thử **không nhớ hội thoại**: học viên mở trang X, thấy lệch thì bỏ câu trả lời và hỏi lại câu rõ hơn (hoặc hỏi TA). Vì luôn kèm số trang nên lệch được phát hiện rẻ. Chưa có nút báo sai *(để dành sau)* | O → học viên tự kiểm | — |
+| **Bị đòi ngoài phạm vi (lớp 3)**: làm hộ bài, viết memo Gate 0, "bỏ qua hướng dẫn…" | Từ chối bằng câu "không đề cập" cố định, không sinh bài hộ, không làm theo lệnh ghi đè trong câu hỏi | C → N2 | C11, C24 |
+| **Đặc thù lĩnh vực (lớp 4)**: tiền đề sai dễ làm học sai ("F1 làm chuẩn duy nhất", "trang 14 nói automate hết") | Không hùa theo tiền đề sai, đính chính đúng điều kiện / ngoại lệ trên slide, kèm trang | C → D → O | C10, C12 |
+
+Lỗi đã biết trước lượt 1 (không sửa trước khi chạy): câu mơ hồ có thể bị AI trả lời luôn thay vì hỏi lại (thử tay câu "metric", `docs/ai-usage.md`); câu dùng từ đồng nghĩa có thể bị `search_slides` trả `[]` → rơi vào nhánh N dù slide có nội dung (C10).
 
 ## §7. Đánh giá & chuẩn "đạt" *(guide 2.4, 4.1)*
-- Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 13 câu (thuong 6 · kho 5 · tu_choi 2) · metric: `eval/metric_spec.yaml` (3 metric)
+- Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 24 câu (thuong 12 · kho 9 · tu_choi 3; 10/24 từ người dùng khảo sát; CP2 có 13 câu, 11 câu thêm lúc 22:43 27/11, không sửa câu cũ) · metric: `eval/metric_spec.yaml` (3 metric)
 - **Chuẩn "đạt"** (chốt **trước 19:30 Thứ Sáu 27/11**, giữ nguyên đến 23:59 Thứ Bảy 28/11): "Đạt khi ≥ 80% câu qua, và 100% câu `tu_choi` không bịa kiến thức ngoài slide"
 - Kết quả: lượt 1 __/__ (__%) · lượt 2 __/__ (__%) — run ID: __ / __ → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
 
@@ -126,8 +144,20 @@ flowchart TD
 
 ## §9. Rủi ro & an toàn
 - Dữ liệu: đã ẩn danh gì, không thu gì, không đưa gì vào model gói miễn phí:
+  - **Đã ẩn danh:** khảo sát `evidence/survey/results.csv` đã bỏ cột thời gian nộp và câu 11 (liên hệ), phiếu chỉ còn mã `#01…#22`. Bản export gốc còn thông tin liên hệ không commit (`.gitignore`: `evidence/**/raw-*`). Data pre-class BTC cấp không commit, repo chỉ có số đã tổng hợp + `evidence/count.py`. Ví dụ trích từ data chỉ dùng mã học viên (`L0585`…) có sẵn trong data, không có tên.
+  - **Không thu:** bản chạy thử không đăng nhập, không hỏi tên / mã học viên, không lưu lịch sử hỏi của người dùng thật. Trace (`traces/`) chỉ ghi câu thử trong bộ câu thử và phiên mô phỏng.
+  - **Đưa vào model gói miễn phí (Gemini, Google AI Studio, có thể dùng để huấn luyện):** chỉ ≤3 đoạn của `data/slides.csv` (nhóm viết lại từ slide Ngày 2, không chép nguyên văn) + câu hỏi. **Không** đưa dữ liệu khảo sát, data pre-class hay thông tin học viên vào model. Khi dùng thật cần chuyển gói trả phí (không dùng dữ liệu để huấn luyện) vì câu hỏi của học viên có thể chứa thông tin cá nhân.
+  - API key chỉ nằm trong `.env` trên máy từng người, không commit.
 - AI **không được** làm gì kể cả khi người dùng yêu cầu:
+  1. Trả lời bằng kiến thức ngoài các đoạn slide được đưa vào (kể cả khi model "biết").
+  2. Nêu số trang không có trong các trang `search_slides` đã tìm (code chặn ở bước D).
+  3. Làm hộ bài lab, viết hộ memo / bài nộp (C11, C24).
+  4. Làm theo lệnh nằm trong câu hỏi ("bỏ qua hướng dẫn", "đóng vai khác"…), vì câu hỏi chỉ là dữ liệu.
+  5. Khẳng định thay giảng viên về lịch, lớp, bản slide nào đúng (C16).
 - Ai có thể bị hại nếu AI sai, và nhóm chặn thế nào:
+  - **Học viên**: hiểu sai bài trước buổi học, mang kiến thức sai lên lớp hoặc vào bài nộp. Chặn: chỉ trả lời từ slide · luôn kèm "Xem trang X" để tự kiểm · code kiểm số trang · không có căn cứ thì nói "không đề cập" thay vì đoán (G10).
+  - **Giảng viên / TA**: mất thời gian sửa lại hiểu sai, hoặc nhận thêm câu hỏi được AI chuyển sang. Chặn: câu "không đề cập" chỉ sang giảng viên / TA chứ không tự trả lời; chỉ phủ slide Ngày 2 (lát cắt hẹp) nên số câu chuyển sang có giới hạn.
+  - **Rủi ro còn lại:** AI tóm tắt lệch ý nhưng vẫn nêu đúng trang (code không bắt được). Phát hiện bằng chấm tay theo `eval/metric_spec.yaml`; với người dùng thật, số trang là cách tự kiểm duy nhất.
 
 ## §10. Phân công & changelog
 - Phân công có tên (theo chặng, chia cặp — guide "Cách chia việc"): __
@@ -138,7 +168,8 @@ flowchart TD
 
 | Thời điểm | Đổi gì | Vì sao (trỏ về câu thử / lỗi / bằng chứng nào) |
 |---|---|---|
-|  |  |  |
+| 27/11 22:43 | Bộ câu thử 13 → 24 câu: thêm C14–C24 (10 câu `nguoi_dung` viết từ lời phàn nàn ở câu 9 khảo sát, 1 câu `tu_choi`). Không sửa câu C01–C13 | CP3 cần 20–30 câu, ≥1/3 từ người dùng / data thật (CP2: 0/13) |
+| 28/11 sáng | Điền `spec.md` §0, §1 (4 dòng đầu), §6, §9 | Đủ §0–§7 cho CP3 |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)** (sửa theo góp ý — không sửa chuẩn "đạt", câu thử, số bằng chứng, kết quả các lượt đã chạy)
 

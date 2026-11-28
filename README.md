@@ -84,14 +84,19 @@ Nhóm dùng stack khác (Node, Streamlit, notebook…): sửa hàm `run_app()` t
 
 | Thành phần | Thật / Giả | Ghi chú |
 |---|---|---|
-| Lời gọi AI ở quyết định trung tâm | **Thật** (bắt buộc từ CP3) | Model: ____ |
-|  |  |  |
+| Lời gọi AI ở quyết định trung tâm | **Thật** (bắt buộc từ CP3) | Model: `gemini-3.1-flash-lite` (Google AI Studio, gói miễn phí) · `.env`: `MODEL_PROVIDER=gemini`, `MODEL_NAME=gemini-3.1-flash-lite`, `API_KEY=<key của bạn>` · 1 lần gọi model / câu hỏi, 0 lần khi không tìm được đoạn slide nào |
+| Công cụ `search_slides` | **Thật** | Tra `data/slides.csv`: 28 đoạn nhóm viết lại từ slide Ngày 2, kèm số trang. So từ khoá (bỏ dấu, bỏ từ chức năng), chưa tìm theo nghĩa |
+| Dữ liệu slide | **Viết lại** | Tóm tắt bằng lời của nhóm, không chép nguyên văn slide gốc · `data/DATA_CARD.md` |
+| Kiểm trích dẫn | **Thật** (code) | `_pages_cited` trong `codebase/agent.py`: số trang trong câu trả lời phải thuộc các trang đã tìm, sai thì thay bằng "slide không đề cập" |
+| Kết nối LMS | **Không có** | Chạy bằng dòng lệnh, không đăng nhập / không sửa LMS thật (`spec.md` §4 "Không làm") |
 
 ## Dùng AI vào việc gì
 
 2–3 dòng (bắt buộc): nhóm dùng công cụ AI nào để làm gì, người kiểm lại phần nào. Chi tiết: [docs/ai-usage.md](docs/ai-usage.md). Coding agent đọc [AGENTS.md](AGENTS.md).
 
-____
+- **Claude Code (Claude Opus 5.5):** viết code bản chạy thử (`search_slides`, luồng `agent.py`, nối Gemini trong `ai.py`), script đếm data / khảo sát, nháp `spec.md` và bằng chứng. Người phụ trách chạy lại, đối chiếu số và tự giải thích từng phần: Thành (công cụ), Nghị (luồng + model), Toàn (đếm data, kiểm tay bằng Excel khớp 143 người).
+- **Antigravity (Gemini 4 Hydrogen):** viết lại 28 đoạn slide Ngày 2 thành `data/slides.csv`, nháp câu thử và metric. An đối chiếu từng đoạn với PDF gốc và rà từng câu thử / `expected`.
+- **Không dùng AI để chấm** cột `pass`: chấm tay theo `eval/metric_spec.yaml`, người thứ hai chấm thử khớp 5/5.
 
 ## File mẫu — điền ở bước nào
 
