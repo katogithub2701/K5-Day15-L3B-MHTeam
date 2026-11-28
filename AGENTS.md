@@ -1,7 +1,5 @@
 # AGENTS.md — hướng dẫn cho coding agent (Claude Code, Cursor, Codex…) làm việc trong repo này
 
-> Ôn lại: ngày 12 · lab ngày 12. Nhóm sửa file này cho khớp bài của mình (thêm quy ước riêng, bỏ dòng không dùng).
-
 ## Repo này là gì
 
 Repo nộp bài hackathon AI20K của nhóm: một bản chạy thử AI cho **một lát cắt** (xem `spec.md` §4), kèm bằng chứng, bộ câu thử và mô phỏng chi phí. Mọi câu trả lời phải chạy được bằng các lệnh dưới đây.
@@ -40,6 +38,6 @@ Khung chỉ dùng thư viện chuẩn của Python. Thêm thư viện thì ghi v
 
 ## Quy ước của nhóm
 
-- Ngôn ngữ trả lời người dùng: __
-- Phong cách code / đặt tên: __
-- Ai duyệt thay đổi do agent tạo trước khi commit: __
+- Ngôn ngữ trả lời người dùng: tiếng Việt (câu trả lời của trợ lý, câu hỏi lại, câu "không đề cập")
+- Phong cách code / đặt tên: chỉ thư viện chuẩn Python; tên hàm, biến `snake_case`; hàm nội bộ có tiền tố `_` (vd `_pages_cited`, `_score`); hằng số viết hoa (vd `TOP_K`, `MIN_COVERAGE`); docstring công cụ ghi đủ tên · input · output · tác động ra ngoài
+- Ai duyệt thay đổi do agent tạo trước khi commit: người phụ trách file đó theo `TEAMS.md` (vd `agent.py`, `ai.py`, `web.py` → Nghị; `tools.py`, `cost/` → Thành; `evidence/` → Toàn; `data/`, `eval/` → An) đọc lại và chạy lại trước khi commit; chi tiết ở `docs/ai-usage.md`

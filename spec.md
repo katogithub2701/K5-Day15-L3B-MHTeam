@@ -177,4 +177,4 @@ Lỗi đã biết trước lượt 1 (không sửa trước khi chạy): câu m�
 
 | Thời điểm | Đổi gì | Vì sao |
 |---|---|---|
-|  |  |  |
+| 28/11 ~20:10 | Dọn phần còn sót của khung: bỏ 2 dòng chú thích khung đầu `README.md`; điền mục "Quy ước của nhóm" và bỏ dòng chú thích khung ở `AGENTS.md`; ghi "Không dùng" ở dòng sinh data synthetic của `docs/ai-usage.md`. Không đổi code, prompt, câu thử, chuẩn "đạt", số bằng chứng hay kết quả các lượt đã chạy | Checklist guide 5.2: repo đủ và đúng trước hạn 23:59; các chỗ `__` / chú thích khung còn sót sau CP4 |
