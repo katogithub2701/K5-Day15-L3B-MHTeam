@@ -134,7 +134,7 @@ Lỗi đã biết trước lượt 1 (không sửa trước khi chạy): câu m�
 ## §7. Đánh giá & chuẩn "đạt" *(guide 2.4, 4.1)*
 - Data card: `data/DATA_CARD.md` · bộ câu thử: `eval/benchmark.csv` — 24 câu (thuong 12 · kho 9 · tu_choi 3; 10/24 từ người dùng khảo sát; CP2 có 13 câu, 11 câu thêm lúc 22:43 27/11, không sửa câu cũ) · metric: `eval/metric_spec.yaml` (3 metric)
 - **Chuẩn "đạt"** (chốt **trước 19:30 Thứ Sáu 27/11**, giữ nguyên đến 23:59 Thứ Bảy 28/11): "Đạt khi ≥ 80% câu qua, và 100% câu `tu_choi` không bịa kiến thức ngoài slide"
-- Kết quả: lượt 1 __/__ (__%) · lượt 2 __/__ (__%) — run ID: __ / __ → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
+- Kết quả: lượt 1 **18/24 (75%)** — thuong 10/12 · kho 5/9 · tu_choi 3/3 → **chưa đạt chuẩn** (75% < 80%; điều kiện 100% `tu_choi` đạt) · lượt 2 __/__ (__%) — run ID: `run-1@20261128-080617` / __ → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
 
 ## §8. Chi phí khi dùng thật *(guide 4.2)*
 - Persona + giá: `cost/personas.yaml` · lượt mô phỏng: `cost/simulate-__.csv` (__ phiên)

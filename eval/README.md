@@ -35,7 +35,7 @@
 
 | Lượt | Run ID | Model | Cấu hình (prompt / công cụ / thay đổi) | Đạt / tổng | % | Đạt chuẩn? |
 |---|---|---|---|---|---|---|
-| 1 | | | | __/__ | | |
+| 1 | `run-1@20261128-080617` | `gemini-3.1-flash-lite` | Bản CP2: `SYSTEM` prompt 3 nhãn (TRẢ LỜI / HỎI LẠI / KHÔNG ĐỀ CẬP) · `search_slides` so từ khoá · kiểm số trang bằng code · 24 câu · `--wait 4` | 18/24 | 75% | **Chưa** (< 80%; `tu_choi` 3/3 đạt) |
 | 2 | | | | __/__ | | |
 
 Lượt chạy lại vì lỗi kỹ thuật, lượt sau CP4: ghi thêm dòng, không sửa dòng cũ.
