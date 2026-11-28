@@ -2,7 +2,7 @@
 
 > Điền ở guide bước 1.2, xong trước **CP3 10:00 Thứ Bảy 28/11**. Chấm ở rubric R1. Người tổng hợp: Nguyễn Quốc Toàn.
 > Ba nguồn ngang nhau — tối thiểu **≥1 nguồn đạt ngưỡng**. Nhóm làm: **khảo sát (nguồn chính) + đào data (kiểm lại)**.
-> **Bản CP2:** số khảo sát lấy trên **22 phiếu nộp từ 14:36 đến 18:18 ngày 27/11**. Form mở đến 08:00 28/11 → khi chốt, xuất lại và chạy `python evidence/survey/count_survey.py raw-<tên>.csv` (cách đếm giữ nguyên), cập nhật số ở đây.
+> **Đã chốt 08:00 28/11:** form đóng, **không có phiếu mới** sau phiếu cuối lúc 18:18 27/11 (Toàn kiểm trên Google Form) → số cuối vẫn là **22 phiếu nộp từ 14:36 đến 18:18 ngày 27/11**, không đổi so với bản CP2. Chạy lại `python evidence/survey/count_survey.py` cho đúng các số dưới đây.
 
 ## 1. Nguồn đã dùng
 
@@ -76,10 +76,10 @@ Giả thuyết ở `evidence/hypothesis.md`: **đúng** (về pain) và **phải
 - **Cách giải thích khác bị loại một phần:** "ChatGPT riêng đã đủ dùng" — có dùng (84,2%) nhưng 61,9% thấy lệch bài và một nửa chỉ hiểu một phần → chưa đủ.
 - **Phải đổi:** "tối trước buổi học" → "khi tự xem slide trước buổi, bất kể giờ" (data: 36,5% câu hỏi lúc 19h–6h).
 
-Điều vẫn chưa biết: số cuối khi chốt form 08:00 28/11; người không trả lời form có gặp pain giống không; pain "không biết slide nào đúng" lớn tới đâu (mới có 5 phiếu tự viết, chưa có câu hỏi riêng).
+Điều vẫn chưa biết: người không trả lời form có gặp pain giống không; pain "không biết slide nào đúng" lớn tới đâu (mới có 5 phiếu tự viết, chưa có câu hỏi riêng).
 
 ## Lịch hẹn (dùng cho CP2 — chỉ ghi vai và giờ, không tên)
 
 | Vai | Giờ hẹn | Đã xong? |
 |---|---|---|
-| Khảo sát Google Form — học viên L3A / L3B, gửi Discord [L34] AI-20K | mở 27/11 14:30 · chốt 28/11 08:00 | đang thu — 22 phiếu lúc 18:18 27/11 |
+| Khảo sát Google Form — học viên L3A / L3B, gửi Discord [L34] AI-20K | mở 27/11 14:30 · chốt 28/11 08:00 | ☑ đã chốt — 22 phiếu (phiếu cuối 18:18 27/11, không có phiếu mới đến 08:00 28/11) |
