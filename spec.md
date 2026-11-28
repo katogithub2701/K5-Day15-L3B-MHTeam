@@ -170,6 +170,7 @@ Lỗi đã biết trước lượt 1 (không sửa trước khi chạy): câu m�
 |---|---|---|
 | 27/11 22:43 | Bộ câu thử 13 → 24 câu: thêm C14–C24 (10 câu `nguoi_dung` viết từ lời phàn nàn ở câu 9 khảo sát, 1 câu `tu_choi`). Không sửa câu C01–C13 | CP3 cần 20–30 câu, ≥1/3 từ người dùng / data thật (CP2: 0/13) |
 | 28/11 sáng | Điền `spec.md` §0, §1 (4 dòng đầu), §6, §9 | Đủ §0–§7 cho CP3 |
+| 28/11 10:18 · **cải tiến trước lượt 2** (commit `a70f3e0`) | `codebase/agent.py`, `SYSTEM` prompt mục HỎI LẠI: **bắt buộc hỏi lại** khi câu dùng từ chỉ trỏ ("đó / này / kia") trỏ tới thứ chưa gọi tên hay ghi số trang trong chính câu — kể cả khi chỉ tìm ra 1 đoạn; nêu rõ trong câu thì không hỏi lại. Ví dụ trong prompt không lấy từ bộ câu thử. Không đổi `search_slides`, sơ đồ, model | Nhóm lỗi **"không hỏi lại khi câu mơ hồ"** (C08, C09, lượt 1): AI tự đoán rồi trả lời, C09 ghép 2 trang không liên quan → đúng rủi ro số 1 ở §4 (trả lời lệch bài). Chọn trong họp 10:00 thay vì sửa `search_slides` (C10, C14) vì guide 4.1 chỉ cho 1 cải tiến / 1 nhóm lỗi. Lượt 2: `run-2@20261128-101825` |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)** (sửa theo góp ý — không sửa chuẩn "đạt", câu thử, số bằng chứng, kết quả các lượt đã chạy)
 
