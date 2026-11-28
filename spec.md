@@ -10,7 +10,7 @@ Data BTC cấp đã dùng (nếu có — không commit nguyên file): `data/prec
 - Luồng hiện tại của việc này, trong khoá hoặc trên app thật (3–5 bước; ảnh chụp từ tài khoản của mình, đã che thông tin):
   1. Học viên mở LMS AI Thực chiến (aithucchien.vinuni.edu.vn), vào buổi sắp học, mở file slide PDF. Một bài có thể có nhiều bản slide của nhiều giảng viên / lớp (5/11 phiếu tự viết than "không biết slide nào đúng", `evidence/summary.md` §3).
   2. Đọc slide. 19/22 người khảo sát gặp chỗ không hiểu, 8 người gặp > 3 chỗ (câu 4).
-  3. Gặp chỗ khó thì đọc lại slide (15/19), chép đoạn sang ChatGPT / Gemini riêng để hỏi (16/19), tra Google (7/19), hỏi bạn (4/19) hoặc để dành hỏi trên lớp (3/19) (câu 5).
+  3. Gặp chỗ khó thì đọc lại slide (15/19), chép đoạn sang ChatGPT / Gemini riêng để hỏi (16/19), tra Google (7/19), hỏi bạn (4/19), hỏi trên Discord (2/19) hoặc để dành hỏi trên lớp (3/19) (câu 5).
   4. Đọc câu trả lời rồi tự đoán nó có khớp với cách giảng viên dạy không. 13/21 người có tra thấy câu trả lời lệch một phần hoặc lệch nhiều so với bài (câu 8). Mất trung bình ≈ 15,9 phút mỗi lần (câu 6).
   5. Lên lớp: 9/19 người mới chỉ "hiểu một phần" (câu 7).
   - Ảnh chụp màn hình: **chưa có** (chưa chụp, sẽ bổ sung khi có).
@@ -125,7 +125,7 @@ Mỗi đường khớp một nhánh trên sơ đồ §4 và có câu thử kiể
 | **Mọi thứ suôn sẻ** | 2–4 câu giải thích sát ý slide, kết bằng "Xem trang X". Học viên mở trang X để tự kiểm | B → C → D → O | C01–C05, C07, C14, C19–C23 |
 | **Không chắc (lớp 2)**: câu quá ngắn / mơ hồ ("cái ma trận đó…") | Đúng 1 câu hỏi lại để học viên nói rõ khái niệm / trang nào, không đoán bừa | C → Q | C08, C09 |
 | **Không có căn cứ (lớp 1)**: ngoài slide Ngày 2, buổi khác, chi tiết chỉ có trong hình | Câu cố định "Slide Ngày 2 không đề cập… hỏi giảng viên hoặc TA trên Discord". Không tìm được đoạn nào thì **không gọi model**. Câu hỏi về hình thì trả lời phần chữ có căn cứ và nói rõ cần mở trang để xem hình | N / N2 (hình: O) | C06, C15–C18 · C13 |
-| **Người dùng sửa**: thấy câu trả lời lệch slide | Bản chạy thử **không nhớ hội thoại**: học viên mở trang X, thấy lệch thì bỏ câu trả lời và hỏi lại câu rõ hơn (hoặc hỏi TA). Vì luôn kèm số trang nên lệch được phát hiện rẻ. Chưa có nút báo sai *(để dành sau)* | O → học viên tự kiểm | — |
+| **Người dùng sửa**: thấy câu trả lời lệch slide | Bản chạy thử **không nhớ hội thoại**: học viên mở trang X, thấy lệch thì bỏ câu trả lời và hỏi lại câu rõ hơn (thêm tên khái niệm / số trang) hoặc hỏi TA; mỗi câu được tra lại từ đầu. Đây là giới hạn đã biết: 46,9% câu trên pre-class là hỏi nối (M4, `evidence/data-mining.md`). Vì luôn kèm số trang nên lệch được phát hiện rẻ. Chưa có nút báo sai *(để dành sau)* | O → học viên tự kiểm | — |
 | **Bị đòi ngoài phạm vi (lớp 3)**: làm hộ bài, viết memo Gate 0, "bỏ qua hướng dẫn…" | Từ chối bằng câu "không đề cập" cố định, không sinh bài hộ, không làm theo lệnh ghi đè trong câu hỏi | C → N2 | C11, C24 |
 | **Đặc thù lĩnh vực (lớp 4)**: tiền đề sai dễ làm học sai ("F1 làm chuẩn duy nhất", "trang 14 nói automate hết") | Không hùa theo tiền đề sai, đính chính đúng điều kiện / ngoại lệ trên slide, kèm trang | C → D → O | C10, C12 |
 
